@@ -16,6 +16,17 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
+# Load .env from project root if present (so ANTHROPIC_API_KEY doesn't need
+# to be set manually in the shell each time)
+_env_path = os.path.join(os.path.dirname(__file__), ".env")
+if os.path.isfile(_env_path):
+    with open(_env_path) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
+
 import argparse
 import json
 
