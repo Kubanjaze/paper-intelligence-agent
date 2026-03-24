@@ -51,6 +51,9 @@ def main() -> None:
                         help="Output directory for all artifacts")
     parser.add_argument("--model",   default="claude-opus-4-6",
                         help="Model for extraction and agent phases")
+    parser.add_argument("--skip-agent", action="store_true",
+                        help="Skip Phase B research agent (web search + report). "
+                             "Saves ~$0.50–$1.00 per paper.")
     parser.add_argument("--admet",   action="store_true",
                         help="Run ADMET scoring on extracted compounds with SMILES")
     parser.add_argument("--phase02", default="../compound-intelligence-pipeline",
@@ -95,10 +98,13 @@ def main() -> None:
         print(f"  sar_trends.json → {sar_path}")
 
         # ── Phase B — Research Agent ────────────────────────────────────────
-        print("Running research agent (web search + report)...")
-        extraction_json = json.dumps(extraction.model_dump(), indent=2)
-        anyio.run(run_research_agent, extraction_json, args.output, args.model)
-        print(f"  report.md       → {os.path.join(args.output, 'report.md')}")
+        if args.skip_agent:
+            print("Skipping research agent (--skip-agent).")
+        else:
+            print("Running research agent (web search + report)...")
+            extraction_json = json.dumps(extraction.model_dump(), indent=2)
+            anyio.run(run_research_agent, extraction_json, args.output, args.model)
+            print(f"  report.md       → {os.path.join(args.output, 'report.md')}")
 
         # ── ADMET Handoff (optional) ────────────────────────────────────────
         if args.admet:
