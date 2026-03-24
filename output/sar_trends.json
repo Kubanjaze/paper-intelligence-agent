@@ -1,0 +1,66 @@
+[
+  {
+    "finding": "Replacement of the aminoisoquinoline back-pocket group with a smaller aminopyridine bearing a methyl group reduced aromatic ring count while maintaining occupancy of the lipophilic cavity and enforcing a desired dihedral angle about the biaryl bond.",
+    "structural_feature": "aminopyridine with methyl group replacing aminoisoquinoline at back-pocket position",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "To reduce aromatic ring count, the aminoisoquinoline was replaced with an aminopyridine featuring a methyl group, which was designed to fill the lipophilic cavity of this region while enforcing a desired dihedral angle about the biaryl bond.",
+    "page_reference": "6"
+  },
+  {
+    "finding": "Optimization of the back-pocket region by filling the lipophilic cavity between the alpha-2 (switch-II) helix and the alpha-3 helix enhanced potency, with Asp 69 serving as a hydrogen bond acceptor.",
+    "structural_feature": "aromatic groups in the back-pocket region",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "Previous KRAS G12C inhibitor studies suggested that the switch-II helix could potentially rotate to accommodate aromatic groups in the back-pocket and that Asp 69 was positioned to serve as a hydrogen bond acceptor.",
+    "page_reference": "5"
+  },
+  {
+    "finding": "Divarasib has a significant noncovalent binding component that contributes to its high potency and rapid alkylation kinetics compared with other KRAS G12C inhibitors.",
+    "structural_feature": "noncovalent binding interactions (overall scaffold optimization)",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "We demonstrate a significant noncovalent binding component of divarasib that contributes to its potency and rapid kinetics.",
+    "page_reference": "4"
+  },
+  {
+    "finding": "Improvements in noncovalent Ki drove improvements in both potency and kinetics of covalent alkylation, consistent with a two-step kinetic model for covalent inhibition.",
+    "structural_feature": "noncovalent Ki optimization",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "While our data and analysis strongly suggest that improvements in noncovalent K",
+    "page_reference": "7"
+  },
+  {
+    "finding": "A correlation was observed between the biochemical SOS exchange assay potency and cellular target engagement across the compound series.",
+    "structural_feature": "overall scaffold potency optimization",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "(a) Correlation observed between the SOS exchange biochemical assay and cellular target engagement. All molecules in the graph share the substructure described in",
+    "page_reference": "7"
+  },
+  {
+    "finding": "Divarasib demonstrated greater potency and faster kinetics of alkylation compared with other KRAS G12C inhibitors in vitro.",
+    "structural_feature": "divarasib scaffold vs other KRAS G12C inhibitors",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "Divarasib has greater potency and kinetics of alkylation compared with other KRAS G12C inhibitors in vitro",
+    "page_reference": "4"
+  },
+  {
+    "finding": "An isoquinoline moiety attached at quinazoline-C7 was used as initial attempt to fill the lipophilic back-pocket cavity.",
+    "structural_feature": "isoquinoline at quinazoline C7 position",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "In an attempt to fill the lipophilic cavity of the back-pocket region, an isoquinoline moiety was attached at quinazoline-C7 1",
+    "page_reference": "5"
+  },
+  {
+    "finding": "Non-KRAS G12C driven cell lines showed lack of sensitivity to divarasib, demonstrating high selectivity for KRAS G12C mutant cells.",
+    "structural_feature": "KRAS G12C selectivity profile",
+    "direction": "improve",
+    "magnitude": null,
+    "evidence_quote": "The lack of sensitivity of non-KRAS G12C driven cell lines left us with an incomplete picture of cellular selectivity.",
+    "page_reference": "8"
+  }
+]
